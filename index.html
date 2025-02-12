@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Main Page</title>
+      <link rel="icon" type="image/x-icon" href="Image-Main Page/graphic-design.ico">
+      <base href="/" />  
+      <link href="CSS/loading-screen.css" rel="stylesheet" />
+      <link href="CSS/index.css" rel="stylesheet" />
+      <link href="CSS/btn-back-top.css" rel="stylesheet" />
+      <link href="CSS/social-media.css" rel="stylesheet" />
+      <link href="CSS/navigation-bar.css" rel="stylesheet" />
+      <link href="CSS/image-profile.css" rel="stylesheet" />
+      <link href="CSS/text.css" rel="stylesheet" />
+  </head>
+  <body class="loading">
+      <div class="div-loading">
+        <div class="text">Loading...</div>
+        <label class="percent">100%</label>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div id="container">
+        <!-- 
+        0. loading screen -> done
+        1. navigation bar
+        2. picture
+        3. text
+        4. colors
+        5. buttons
+        6. social media -> done
+        7. contact form
+        8. projects
+        9. projects - info
+        10. projects - links
+        11. projects - images
+        12. skills
+        13. skills - levels
+        14. languages
+        15. languages - levels
+        16. programming languages
+        17. programming languages - levels
+        18. work experience
+        19. work experience - info
+        20. education
+        21. education - info
+        22. back to top btn -> done
+        -->
+          <div id="navigation-bar">
+            <div id="container-bar">
+              <input type="checkbox" id="check">
+                <label class="bar" for="check">
+
+                  <span class="top"></span>
+                  <span class="middle"></span>
+                  <span class="bottom"></span>
+              </label>
+              <ul class="bar-items">
+                <li style="--i: 1; --g: 1;">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span>about me</span>
+                    </a>
+                </li>
+                <li style="--i: 2; --g: 2;">
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li style="--i: 3; --g: 3;">
+                    <a href="#">
+                        <i class="fa fa-folder"></i>
+                        <span>skills</span>
+                    </a>
+                </li>
+                <li style="--i: 4; --g: 4;">
+                    <a href="#">
+                        <i class="fa fa-message"></i>
+                        <span>languages</span>
+                    </a>
+                </li>
+                <li style="--i: 5; --g: 5;">
+                    <a href="#">
+                        <i class="fa fa-globe"></i>
+                        <span>work-experience</span>
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="picture">
+            <img id="image" src="Image-Main Page/profile.jpg" alt="picture">
+            <img id="image" src="Image-Main Page/profile.jpg" alt="picture">
+            <img id="image" src="Image-Main Page/profile.jpg" alt="picture">
+            <img id="image" src="Image-Main Page/profile.jpg" alt="picture">
+            <img id="image" src="Image-Main Page/profile.jpg" alt="picture">
+            <img id="image" src="Image-Main Page/profile.jpg" alt="picture">
+          </div>
+          <div id="text">
+            <p id="name">Damian Tsvetkov</p>
+            <p id="profession">Software Engineer</p>
+            <p id="profile-info">I am a software engineer.</p>
+          </div>
+          <div id="colors"></div>
+          <div id="buttons"></div>
+          <div id="contact-form"></div>
+          <div id="projects"></div>
+          <div id="projects-info"></div>
+          <div id="projects-links"></div>
+          <div id="projects-images"></div>
+          <div id="skills"></div>
+          <div id="skills-levels"></div>
+          <div id="languages"></div>
+          <div id="languages-levels"></div>
+          <div id="programming-languages"></div>
+          <div id="programming-languages-levels"></div>
+          <div id="work-experience"></div>
+          <div id="work-experience-info"></div>
+          <div id="education"></div>
+          <div id="education-info"></div>
+          <div id="btn-back-top">
+                <button class="button" onclick="scrollToTop()">
+                  <svg class="svgIcon" viewBox="0 0 384 512">
+                    <path
+                      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                    </path>
+                  </svg>
+                </button>
+          </div>
+      </div>
+         <!-- Colored Bottom Line -->
+      <div id="footer">
+          <!-- Social Media -->
+          <div id="social-media">
+            <p id="social-media-title">SOCIAL MEDIA:</p>
+            <ul class="social">
+              <!-- Facebook -->
+              <li class="social-item">
+                <a class="social-link" href="https://www.facebook.com/profile.php?id=100007485781897">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+              <!-- Github -->
+              <li class="social-item">
+                <a class="social-link" href="https://github.com/damian568">
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <!-- Instagram -->
+              <li class="social-item">
+                <a class="social-link" href="https://www.instagram.com/damiantsvetkov/">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor"></path>
+                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <script src="JS/loading.js"></script>
+      <script src="JS/menu.js"></script>
+      <script src="JS/btn-back-top.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+#navigation-bar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+}
+
+.bar span {
+  position: absolute;
+  width: 45px;
+  height: 7px;
+  background: #344262;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
+}
+
+.bar span.top {
+  top: 0;
+}
+
+.bar span.middle {
+  top: 17px;
+}
+
+.bar span.bottom {
+  bottom: 0;
+}
+
+input[type="checkbox"]:checked + label .top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 48px;
+  left: 5px;
+}
+
+input[type="checkbox"]:checked + label .bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 48px;
+  bottom: -1px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type="checkbox"]:checked + label .middle {
+  opacity: 0;
+}
+
+.container-bar {
+  position: relative;
+  top: 150px;
+  width: 70px;
+  background-color: #344262;
+  border-radius: 50px;
+  transition: height 0.4s ease;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.container-bar.active {
+  height: 420px;
+  transition: height 0.4s ease;
+}
+
+.bar-items {
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+input[type="checkbox"]:checked ~ .bar-items {
+  opacity: 1;
+  visibility: visible;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  color: #344262;
+}
+
+li a i {
+  display: block;
+  font-size: 18px;
+  padding: 25px 0;
+  width: 100%;
+  text-align: center;
+  transform: scale(0);
+  transition: transform 0.4s ease;
+}
+
+li:hover a i::after {
+  width: 8px;
+  transition: 0.3s;
+}
+
+.bar-items li a i {
+  transform: scale(1);
+  transition-delay: calc(0.08s * var(--i));
+}
+
+.bar-items li:hover a i {
+  color: #26d07c;
+}
+
+li a span {
+  position: absolute;
+  color: #344262;
+  margin: -22px 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+
+.bar-items li a span {
+  transform: translateX(-15px);
+  transition-delay: calc(0.08s * var(--g));
+}
+
+.bar-items li:hover a span {
+  transform: translateX(-30px);
+  color: #26d07c;
+}
