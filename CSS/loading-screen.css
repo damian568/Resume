@@ -1,0 +1,96 @@
+.div-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 5em;
+  } /* adjust width based on content */
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.text {
+  font-size: 80px;
+  font-weight: 400;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-right: 0.1em solid #999; /* Cursor */
+  animation: typeAndDelete 4s steps(15) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+}
+
+.add {
+  animation: animate 0.7s ease-in-out 0.1s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-bar {
+  width: 406px;
+  height: 22px;
+  background: #111;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+.progress {
+  width: 203px;
+  height: 16px;
+  background: #f60d54;
+  border-radius: 13px;
+}
+
+.percent {
+  position: absolute;
+  left: 187px;
+  color: #fdb5ca;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+/* Disable user interaction */
+body.loading {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#container {
+  opacity: 0; /* Hidden by default */
+  transition: opacity 1s ease-in-out;
+}
+
+#footer {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
