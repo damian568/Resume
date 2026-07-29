@@ -1,56 +1,42 @@
-.button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1000;
-  }
-  
-  .svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .button:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(181, 160, 255);
-    align-items: center;
-  }
-  
-  .button:hover .svgIcon {
-    transition-duration: 0.3s;
-    transform: translateY(-200%);
-  }
-  
-  .button::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    font-size: 0px;
-  }
-  
-  .button:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    transition-duration: 0.3s;
-  }
+#btn-back-top .button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, border-color 0.25s ease;
+}
+
+#btn-back-top .button.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#btn-back-top .button:hover {
+  border-color: var(--accent-2);
+}
+
+#btn-back-top .svgIcon {
+  width: 14px;
+}
+
+#btn-back-top .svgIcon path {
+  fill: var(--text);
+  transition: fill 0.2s ease;
+}
+
+#btn-back-top .button:hover .svgIcon path {
+  fill: var(--accent-2);
+}
