@@ -52,4 +52,5 @@
   window.addEventListener('load', sync);
   window.addEventListener('resize', sync);
   mq.addEventListener('change', sync);
+  window.syncContactFormHeight = sync;
 })();

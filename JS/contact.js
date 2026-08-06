@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.disabled = true;
     statusEl.textContent = 'Sending...';
     statusEl.className = 'form-status';
+    if (window.syncContactFormHeight) window.syncContactFormHeight();
 
     try {
       const response = await fetch('/api/contact', {
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       statusEl.classList.add('error');
     } finally {
       submitBtn.disabled = false;
+      if (window.syncContactFormHeight) window.syncContactFormHeight();
     }
   });
 });
