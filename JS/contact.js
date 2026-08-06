@@ -12,9 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     statusEl.className = 'form-status';
 
     try {
-      const response = await fetch('PHP/contact.php', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        body: new FormData(form),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
       });
       const data = await response.json();
 
