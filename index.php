@@ -12,6 +12,7 @@
     <link href="CSS/navigation-bar.css" rel="stylesheet" />
     <link href="CSS/hero.css" rel="stylesheet" />
     <link href="CSS/highlights.css" rel="stylesheet" />
+    <link href="CSS/illustrations.css" rel="stylesheet" />
     <link href="CSS/skills.css" rel="stylesheet" />
     <link href="CSS/timeline.css" rel="stylesheet" />
     <link href="CSS/projects.css" rel="stylesheet" />
@@ -46,5 +47,6 @@
     <script src="JS/btn-back-top.js"></script>
     <script src="JS/reveal.js"></script>
     <script src="JS/contact.js"></script>
+    <script src="JS/projects-filter.js"></script>
   </body>
 </html>

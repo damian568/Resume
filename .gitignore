@@ -1,0 +1,6 @@
+# Local mail credentials — never commit real SMTP secrets
+PHP/mail-config.php
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
