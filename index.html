@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damyan Tsvetkov — Software Engineer</title>
+    <meta name="description" content="Portfolio of Damyan Tsvetkov — Computer Technologies student and software engineer building Android apps, web projects and more." />
+    <link rel="icon" type="image/x-icon" href="Image-Main Page/graphic-design.ico" />
+    <link href="CSS/variables.css" rel="stylesheet" />
+    <link href="CSS/base.css" rel="stylesheet" />
+    <link href="CSS/loading-screen.css" rel="stylesheet" />
+    <link href="CSS/navigation-bar.css" rel="stylesheet" />
+    <link href="CSS/hero.css" rel="stylesheet" />
+    <link href="CSS/highlights.css" rel="stylesheet" />
+    <link href="CSS/illustrations.css" rel="stylesheet" />
+    <link href="CSS/skills.css" rel="stylesheet" />
+    <link href="CSS/timeline.css" rel="stylesheet" />
+    <link href="CSS/projects.css" rel="stylesheet" />
+    <link href="CSS/certificates.css" rel="stylesheet" />
+    <link href="CSS/contact.css" rel="stylesheet" />
+    <link href="CSS/footer.css" rel="stylesheet" />
+    <link href="CSS/btn-back-top.css" rel="stylesheet" />
+    <link href="CSS/responsive.css" rel="stylesheet" />
+  </head>
+  <body class="loading">
+        <div class="div-loading">
+      <div class="text">Loading...</div>
+      <label class="percent">0%</label>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+        <header id="navbar">
+      <div class="container navbar-inner">
+        <button class="brand" onclick="scrollToSection('about')" aria-label="Damyan Tsvetkov — back to top">
+          <img class="logo-mark" src="Image-Main Page/logo.png" width="68" height="68" alt="" />
+        </button>
+        <div class="nav-right">
+          <nav id="nav-menu" class="nav-menu">
+            <button class="nav-link" data-section="about" onclick="scrollToSection('about')">About</button>
+            <button class="nav-link" data-section="skills" onclick="scrollToSection('skills')">Skills</button>
+            <button class="nav-link" data-section="experience" onclick="scrollToSection('experience')">Experience</button>
+            <button class="nav-link" data-section="education" onclick="scrollToSection('education')">Education</button>
+            <button class="nav-link" data-section="projects" onclick="scrollToSection('projects')">Projects</button>
+            <button class="nav-link" data-section="certificates" onclick="scrollToSection('certificates')">Certificates</button>
+            <button class="nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+            <a class="nav-cta nav-cta-mobile" href="Files/Damyan-Tsvetkov-CV.pdf" download>
+              Download CV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </a>
+          </nav>
+          <a class="nav-cta nav-cta-desktop" href="Files/Damyan-Tsvetkov-CV.pdf" download>
+            Download CV
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="container">
+      <main>
+                <!-- About / Hero -->
+        <section id="about" class="hero section">
+          <div class="container hero-inner">
+            <div class="hero-text reveal">
+              <span class="hero-badge"><span class="dot"></span>Who Am I</span>
+              <h1 class="hero-heading">
+                Hi, I'm<br />
+                <span class="gradient-text">Damyan Tsvetkov</span>
+              </h1>
+              <p class="role">
+                Computer Technologies Student &middot; Aspiring Android Developer &middot;
+                <span class="accent-text">Gamer At Heart</span>
+              </p>
+              <p class="bio">
+                I'm a Computer Technologies student at the Higher School of Telecommunications and Post in Sofia,
+                currently working as a programmer. I like building things end-to-end — Android apps in Kotlin,
+                small tools in C++ and Java, and web projects with Angular and NestJS. Long-term, I'm working
+                toward becoming a professional Android developer, with a dream of going pro as a gamer somewhere
+                along the way.
+              </p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                  View My Projects
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                  Get In Touch
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </button>
+              </div>
+              <div class="hero-chips">
+                <span class="chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  Vratsa, Sofia, Bulgaria
+                </span>
+                <span class="chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"></path><path d="M2 10v5"></path></svg>
+                  Computer Technologies Student
+                </span>
+              </div>
+              <div class="hero-chips">
+                <span class="chip chip-wide">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  Currently: Programmer @ Hermes Engineering
+                </span>
+              </div>
+            </div>
+
+            <div class="hero-showcase reveal">
+              <div class="showcase-card">
+                <span class="blob blob-teal"></span>
+                <span class="blob blob-purple"></span>
+                <span class="dot-grid"></span>
+                <div class="showcase-photo">
+                  <img src="Image-Main Page/profile.jpg" alt="Damyan Tsvetkov" />
+                </div>
+                <div class="showcase-quote">
+                  <span class="quote-mark">&ldquo;</span>
+                  <p>Code. Learn. Improve.<br />Repeat.</p>
+                </div>
+              </div>
+              <span class="particle p1"></span>
+              <span class="particle p2"></span>
+              <span class="particle p3"></span>
+            </div>
+          </div>
+        </section>
+                <!-- Highlights -->
+        <section class="highlights-section">
+          <div class="container">
+            <div class="highlights-panel reveal">
+              <div class="highlight-item">
+                <div class="highlight-icon teal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3>Development</h3>
+                <p>Building Android apps in Kotlin, desktop tools in C++ and Java, and web apps with modern technologies.</p>
+                <div class="dot-row teal"><span></span><span></span><span></span></div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 2.5 4.5 6.5 4.5 10.5 0 2-1 4-2 5.5l-2.5 3-2.5-3c-1-1.5-2-3.5-2-5.5C7.5 8.5 9 4.5 12 2Z"></path><circle cx="12" cy="10.5" r="1.8"></circle><path d="M9 16.5 6.5 19l1-4"></path><path d="M15 16.5 17.5 19l-1-4"></path></svg>
+                </div>
+                <h3>Always Learning</h3>
+                <p>Exploring new technologies and improving every day to become a better developer.</p>
+                <div class="dot-row purple"><span></span><span></span><span></span></div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon teal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="10" rx="5"></rect><line x1="7" y1="11" x2="7" y2="15"></line><line x1="5" y1="13" x2="9" y2="13"></line><circle cx="15" cy="11.5" r="1"></circle><circle cx="18" cy="13.5" r="1"></circle></svg>
+                </div>
+                <h3>Gamer Mindset</h3>
+                <p>Discipline, focus and strategic thinking that help me in both games and coding.</p>
+                <div class="dot-row teal"><span></span><span></span><span></span></div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                </div>
+                <h3>Future Goals</h3>
+                <p>Become a professional Android developer and compete at a pro level in gaming.</p>
+                <div class="dot-row purple"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+                <!-- Skills -->
+        <section id="skills" class="section">
+          <div class="container">
+            <div class="skills-header reveal">
+              <div class="skills-header-text">
+                <p class="eyebrow">02 &middot; Skills</p>
+                <h2 class="skills-heading">What I <span class="text-teal">work</span> <span class="text-purple">with</span></h2>
+                <p class="skills-subtitle">A mix of mobile, web and general-purpose programming, plus the tools that go with them.</p>
+                <div class="tagline-row">
+                  <span class="tagline-bar"></span>
+                  <span class="tagline-dots"><i></i><i></i><i></i></span>
+                  <span>Always learning. Always building.</span>
+                </div>
+              </div>
+
+              <div class="skills-illustration">
+                <span class="illus-blob"></span>
+                <span class="illus-dotgrid"></span>
+                <span class="illus-dot d1"></span>
+                <span class="illus-dot d2"></span>
+                <span class="illus-dot d3"></span>
+                <span class="illus-dot d4"></span>
+                <div class="laptop">
+                  <div class="laptop-screen">
+                    <div class="code-line" style="width: 70%"></div>
+                    <div class="code-line" style="width: 45%"></div>
+                    <div class="code-line" style="width: 80%"></div>
+                    <div class="code-line" style="width: 55%"></div>
+                    <div class="code-line" style="width: 65%"></div>
+                  </div>
+                  <div class="laptop-base"></div>
+                </div>
+                <div class="illus-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-grid">
+              <div class="card skill-card theme-teal reveal">
+                <div class="skill-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3>Languages &amp; Frameworks</h3>
+                <p>Core languages and frameworks I use to build modern applications.</p>
+                <div class="skill-divider"></div>
+                <div class="skill-chips">
+                  <span class="tag">Kotlin</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Angular</span>
+                  <span class="tag">NestJS</span>
+                </div>
+              </div>
+
+              <div class="card skill-card theme-purple reveal">
+                <div class="skill-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <h3>Mobile &amp; OOP</h3>
+                <p>Building robust mobile apps using modern OOP principles.</p>
+                <div class="skill-divider"></div>
+                <div class="skill-chips">
+                  <span class="tag">Android Studio</span>
+                  <span class="tag">OOP (Kotlin)</span>
+                  <span class="tag">OOP (C#)</span>
+                  <span class="tag">Android App Dev (Kotlin)</span>
+                  <span class="tag">MIT App Inventor</span>
+                </div>
+              </div>
+
+              <div class="card skill-card theme-blue reveal">
+                <div class="skill-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <h3>Tools &amp; Data</h3>
+                <p>Tools and platforms that help me build, debug and deliver better.</p>
+                <div class="skill-divider"></div>
+                <div class="skill-chips">
+                  <span class="tag">GitHub</span>
+                  <span class="tag">SQL Databases</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Cisco Packet Tracer</span>
+                  <span class="tag">Microsoft Office</span>
+                  <span class="tag">Email &amp; Internet Tools</span>
+                </div>
+              </div>
+
+              <div class="card skill-card theme-pink reveal">
+                <div class="skill-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h3>Soft Skills</h3>
+                <p>The soft skills that help me work in teams and deliver results.</p>
+                <div class="skill-divider"></div>
+                <ul class="soft-skill-list">
+                  <li>
+                    <span class="soft-skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+                    Teamwork &amp; Collaboration
+                  </li>
+                  <li>
+                    <span class="soft-skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span>
+                    Communication
+                  </li>
+                  <li>
+                    <span class="soft-skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></span>
+                    Responsibility &amp; Discipline
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skills-cta reveal">
+              <div class="skills-cta-left">
+                <span class="skills-cta-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 2.5 4.5 6.5 4.5 10.5 0 2-1 4-2 5.5l-2.5 3-2.5-3c-1-1.5-2-3.5-2-5.5C7.5 8.5 9 4.5 12 2Z"></path><circle cx="12" cy="10.5" r="1.8"></circle><path d="M9 16.5 6.5 19l1-4"></path><path d="M15 16.5 17.5 19l-1-4"></path></svg>
+                </span>
+                <p>I enjoy turning ideas into real products and constantly improving my skills along the way.</p>
+              </div>
+              <button class="btn btn-outline skills-cta-btn" onclick="scrollToSection('contact')">
+                Let's build something amazing
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+
+            <div class="languages-wrap">
+              <div class="section-header reveal">
+                <p class="eyebrow">Languages</p>
+                <h2>Spoken &amp; written languages</h2>
+              </div>
+              <div class="languages-grid">
+                <div class="card language-card reveal">
+                  <div class="lang-head">
+                    <h3>Bulgarian</h3>
+                    <span class="lang-level">Native</span>
+                  </div>
+                </div>
+                <div class="card language-card reveal">
+                  <div class="lang-head">
+                    <h3>English</h3>
+                    <span class="lang-level">B2</span>
+                  </div>
+                  <div class="cefr-grid">
+                    <div>Listening <span>B2</span></div>
+                    <div>Reading <span>B2</span></div>
+                    <div>Writing <span>B2</span></div>
+                    <div>Spoken Production <span>B2</span></div>
+                    <div>Spoken Interaction <span>B2</span></div>
+                  </div>
+                </div>
+                <div class="card language-card reveal">
+                  <div class="lang-head">
+                    <h3>German</h3>
+                    <span class="lang-level">A1</span>
+                  </div>
+                  <div class="cefr-grid">
+                    <div>Listening <span>A1</span></div>
+                    <div>Reading <span>A1</span></div>
+                    <div>Writing <span>A1</span></div>
+                    <div>Spoken Production <span>A1</span></div>
+                    <div>Spoken Interaction <span>A1</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                <!-- Work Experience -->
+        <section id="experience" class="section">
+          <div class="container split-layout">
+            <div class="split-sidebar reveal">
+              <p class="eyebrow-number">03.</p>
+              <h2 class="split-heading">
+                Work
+                <span class="gradient-text">Experience</span>
+              </h2>
+              <span class="split-underline"></span>
+              <p class="split-desc">
+                Here's a look at my professional journey so far. Each role has helped me grow, learn and build
+                real-world solutions.
+              </p>
+
+              <div class="icon-showcase">
+                <span class="illus-blob" style="width: 220px; height: 220px; background: var(--accent-2); top: 10px; left: -10px; opacity: 0.3;"></span>
+                <span class="illus-blob" style="width: 200px; height: 200px; background: var(--accent); bottom: -10px; right: -10px; opacity: 0.3;"></span>
+                <span class="illus-dot d1"></span>
+                <span class="illus-dot d3"></span>
+                <svg class="icon-showcase-icon" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="briefcaseGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="var(--accent-2)" />
+                      <stop offset="1" stop-color="var(--accent)" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="15" y="35" width="70" height="45" rx="8" fill="url(#briefcaseGrad)" />
+                  <rect x="35" y="20" width="30" height="18" rx="6" fill="none" stroke="url(#briefcaseGrad)" stroke-width="6" />
+                  <rect x="44" y="52" width="12" height="10" rx="2" fill="var(--bg)" />
+                </svg>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-row">
+                  <span class="stat-icon theme-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></span>
+                  <span>
+                    <span class="stat-value" style="color: var(--accent-2)">7</span>
+                    <span class="stat-label">Work Experiences</span>
+                  </span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-icon theme-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                  <span>
+                    <span class="stat-value" style="color: var(--accent)">5+</span>
+                    <span class="stat-label">Years Since First Role</span>
+                  </span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-icon theme-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                  <span>
+                    <span class="stat-value" style="color: var(--accent-blue)">100%</span>
+                    <span class="stat-label">Commitment</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-v2 reveal">
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+                  <div class="timeline-line theme-teal"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-teal is-current">
+                  <div class="card-top-row">
+                    <span class="date-pill">Feb 2026 &ndash; Aug 2026</span>
+                    <span class="status-pill"><span class="pip"></span>Current</span>
+                  </div>
+                  <h3>Programmer</h3>
+                  <p class="org-line"><span class="org-name">Hermes Engineering Ltd</span><span class="dot-sep">&bull;</span>Sofia, Bulgaria</p>
+                  <p class="desc">Working on internal tools and software solutions, contributing to development and day-to-day programming tasks.</p>
+                  <div class="tag-row">
+                    <span class="tag">C++</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Android</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Git</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"></rect><rect x="8" y="7" width="2" height="2"></rect><rect x="14" y="7" width="2" height="2"></rect><rect x="8" y="12" width="2" height="2"></rect><rect x="14" y="12" width="2" height="2"></rect><path d="M9 21v-4h6v4"></path></svg></div>
+                  <div class="timeline-line theme-purple"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-purple">
+                  <div class="card-top-row">
+                    <span class="date-pill">Jul 2025 &ndash; Sep 2025</span>
+                  </div>
+                  <h3>Sales Consultant &mdash; TV &amp; Audio Systems</h3>
+                  <p class="org-line"><span class="org-name">Technopolis Bulgaria EAD</span><span class="dot-sep">&bull;</span>Sofia, Bulgaria</p>
+                  <p class="desc">Advised customers on TV and audio equipment, helping match products to their needs with strong customer service.</p>
+                  <div class="tag-row">
+                    <span class="tag">Communication</span>
+                    <span class="tag">Customer Service</span>
+                    <span class="tag">Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                  <div class="timeline-line theme-blue"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-blue">
+                  <div class="card-top-row">
+                    <span class="date-pill">Jun 2024 &ndash; Aug 2024</span>
+                  </div>
+                  <h3>Bellboy</h3>
+                  <p class="org-line"><span class="org-name">Hotel Sunny Beach Club &ndash; Adults Only (Super Borovets Property Investment EAD)</span></p>
+                  <p class="org-line">Sofia, Bulgaria</p>
+                  <p class="desc">Assisted guests with luggage and requests, helping ensure a smooth and comfortable stay.</p>
+                  <div class="tag-row">
+                    <span class="tag">Hospitality</span>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Customer Care</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"></rect><rect x="8" y="7" width="2" height="2"></rect><rect x="14" y="7" width="2" height="2"></rect><rect x="8" y="12" width="2" height="2"></rect><rect x="14" y="12" width="2" height="2"></rect><path d="M9 21v-4h6v4"></path></svg></div>
+                  <div class="timeline-line theme-teal"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-teal">
+                  <div class="card-top-row">
+                    <span class="date-pill">Jun 2023 &ndash; Sep 2023</span>
+                  </div>
+                  <h3>Sales Consultant &mdash; TV &amp; Audio Systems</h3>
+                  <p class="org-line"><span class="org-name">Technopolis Bulgaria EAD</span><span class="dot-sep">&bull;</span>Sunny Beach, Bulgaria</p>
+                  <p class="desc">Advised customers on TV and audio equipment, helping match products to their needs with strong customer service.</p>
+                  <div class="tag-row">
+                    <span class="tag">Communication</span>
+                    <span class="tag">Customer Service</span>
+                    <span class="tag">Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+                  <div class="timeline-line theme-purple"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-purple">
+                  <div class="card-top-row">
+                    <span class="date-pill">Oct 2022 &ndash; May 2023</span>
+                  </div>
+                  <h3>Computer Programming Technician</h3>
+                  <p class="org-line"><span class="org-name">Vola Software Ltd</span><span class="dot-sep">&bull;</span>Vratsa, Bulgaria</p>
+                  <p class="desc">Supported programming tasks and technical work as part of the development team.</p>
+                  <div class="tag-row">
+                    <span class="tag">Programming</span>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Git</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"></rect><rect x="8" y="7" width="2" height="2"></rect><rect x="14" y="7" width="2" height="2"></rect><rect x="8" y="12" width="2" height="2"></rect><rect x="14" y="12" width="2" height="2"></rect><path d="M9 21v-4h6v4"></path></svg></div>
+                  <div class="timeline-line theme-blue"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-blue">
+                  <div class="card-top-row">
+                    <span class="date-pill">Jul 2022 &ndash; Sep 2022</span>
+                  </div>
+                  <h3>Sales Consultant &mdash; TV &amp; Audio Systems</h3>
+                  <p class="org-line"><span class="org-name">Technopolis Bulgaria EAD</span><span class="dot-sep">&bull;</span>Vratsa, Bulgaria</p>
+                  <p class="desc">Advised customers on TV and audio equipment, helping match products to their needs with strong customer service.</p>
+                  <div class="tag-row">
+                    <span class="tag">Communication</span>
+                    <span class="tag">Customer Service</span>
+                    <span class="tag">Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-rail">
+                  <div class="timeline-node-lg theme-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+                  <div class="timeline-line theme-teal"></div>
+                </div>
+                <div class="card timeline-card-v2 theme-teal">
+                  <div class="card-top-row">
+                    <span class="date-pill">Oct 2021 &ndash; Jul 2022</span>
+                  </div>
+                  <h3>Application Developer</h3>
+                  <p class="org-line"><span class="org-name">Vola Software Ltd</span><span class="dot-sep">&bull;</span>Vratsa, Bulgaria</p>
+                  <p class="desc">Worked on application development tasks, gaining hands-on experience building software.</p>
+                  <div class="tag-row">
+                    <span class="tag">Programming</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Kotlin</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                <!-- Education -->
+        <section id="education" class="section">
+          <div class="container split-layout">
+            <div class="split-sidebar reveal">
+              <span class="eyebrow-badge">04 &middot; Education</span>
+              <h2 class="split-heading">
+                Education &amp;
+                <span class="gradient-text">Training</span>
+              </h2>
+              <span class="split-underline"></span>
+              <p class="split-desc">
+                My academic background and continuous learning path that shaped my skills and passion for
+                technology.
+              </p>
+
+              <div class="icon-showcase">
+                <span class="illus-blob" style="width: 220px; height: 220px; background: var(--accent-2); top: 0; left: -20px; opacity: 0.3;"></span>
+                <span class="illus-blob" style="width: 200px; height: 200px; background: var(--accent); bottom: -20px; right: -10px; opacity: 0.3;"></span>
+                <span class="illus-dot d2"></span>
+                <span class="illus-dot d4"></span>
+                <svg class="icon-showcase-icon" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="capGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="var(--accent-2)" />
+                      <stop offset="1" stop-color="var(--accent)" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="18" y="72" width="64" height="9" rx="2" fill="url(#capGrad)" opacity="0.5" />
+                  <rect x="23" y="62" width="54" height="9" rx="2" fill="url(#capGrad)" opacity="0.7" />
+                  <polygon points="50,30 92,49 50,68 8,49" fill="url(#capGrad)" />
+                  <rect x="46" y="66" width="8" height="15" fill="url(#capGrad)" />
+                  <circle cx="50" cy="82" r="4" fill="url(#capGrad)" />
+                </svg>
+              </div>
+
+              <div class="tip-box">
+                <span class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"></path></svg></span>
+                <div>
+                  <h4>Always learning</h4>
+                  <p>I believe education never ends. I keep learning, building and improving every day.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="education-main reveal">
+              <div class="subhead-row">
+                <span class="subhead-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"></path></svg></span>
+                <h3>Academic Journey</h3>
+                <span class="subhead-line"></span>
+              </div>
+
+              <div class="timeline-v2">
+                <div class="timeline-row">
+                  <div class="timeline-rail">
+                    <div class="timeline-node-sm theme-teal"></div>
+                    <div class="timeline-line theme-teal"></div>
+                  </div>
+                  <div class="card timeline-card-v2 theme-teal is-current">
+                    <div class="card-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></div>
+                    <div class="card-top-row">
+                      <span class="date-text">Sep 2023 &ndash; Present</span>
+                      <span class="status-pill">In Progress</span>
+                    </div>
+                    <h3>Computer Technologies</h3>
+                    <p class="org-line"><span class="org-name">Higher School of Telecommunications and Post</span></p>
+                    <p class="org-line">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Sofia, Bulgaria
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline-row">
+                  <div class="timeline-rail">
+                    <div class="timeline-node-sm theme-purple"></div>
+                    <div class="timeline-line theme-purple"></div>
+                  </div>
+                  <div class="card timeline-card-v2 theme-purple">
+                    <div class="card-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
+                    <div class="card-top-row">
+                      <span class="date-text">Sep 2018 &ndash; Jun 2023</span>
+                    </div>
+                    <h3>Diploma &mdash; Applied Programming</h3>
+                    <p class="org-line"><span class="org-name">Vocational Technical High School &ldquo;N. Y. Vaptsarov&rdquo; (dual education form)</span></p>
+                    <p class="org-line">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Vratsa, Bulgaria
+                    </p>
+                    <p class="note">Includes a certificate for completing the first gymnasium stage of secondary education (2021).</p>
+                  </div>
+                </div>
+
+                <div class="timeline-row">
+                  <div class="timeline-rail">
+                    <div class="timeline-node-sm theme-blue"></div>
+                  </div>
+                  <div class="card timeline-card-v2 theme-blue">
+                    <div class="card-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
+                    <div class="card-top-row">
+                      <span class="status-pill">Continuous</span>
+                    </div>
+                    <h3>Continuous Learning</h3>
+                    <p class="desc">Online courses, workshops, and personal projects that help me stay up to date with the latest technologies.</p>
+                    <div class="tag-row">
+                      <span class="tag">Kotlin</span>
+                      <span class="tag">Android</span>
+                      <span class="tag">C++</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earlier-list">
+                <div class="subhead-row">
+                  <span class="subhead-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></span>
+                  <h3>Earlier Education</h3>
+                  <span class="subhead-line"></span>
+                </div>
+                <div class="earlier-row">
+                  <span class="earlier-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span>
+                  <span class="name">Certificate of Basic Education &mdash; Secondary School &ldquo;Vasil Kanchov&rdquo;</span>
+                  <span class="loc">Vratsa, Bulgaria</span>
+                  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div class="earlier-row">
+                  <span class="earlier-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span>
+                  <span class="name">Certificate of Primary Education &mdash; Primary School &ldquo;Sveti Sofroniy Vrachanski&rdquo;</span>
+                  <span class="loc">Vratsa, Bulgaria</span>
+                  <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                <!-- Projects -->
+        <section id="projects" class="section">
+          <div class="container">
+            <div class="projects-header reveal">
+              <div>
+                <p class="eyebrow">05 &middot; Projects</p>
+                <h2 class="projects-heading">Things<br />I've <span class="gradient-text">Built</span></h2>
+                <p class="projects-subtitle">A collection of projects I've worked on, exploring ideas and solving real problems with code.</p>
+              </div>
+
+              <div class="projects-illustration">
+                <span class="illus-blob"></span>
+                <span class="illus-dotgrid"></span>
+                <span class="illus-dot d1"></span>
+                <span class="illus-dot d3"></span>
+                <div class="laptop">
+                  <div class="laptop-screen">
+                    <div class="code-line" style="width: 75%"></div>
+                    <div class="code-line" style="width: 50%"></div>
+                    <div class="code-line" style="width: 85%"></div>
+                    <div class="code-line" style="width: 40%"></div>
+                    <div class="code-line" style="width: 65%"></div>
+                    <div class="code-line" style="width: 55%"></div>
+                  </div>
+                  <div class="laptop-base"></div>
+                </div>
+                <div class="illus-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-filters reveal">
+              <button class="filter-tab active" data-filter="all">All Projects</button>
+              <button class="filter-tab" data-filter="android">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18c0 .55.45 1 1 1h1v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19h1c.55 0 1-.45 1-1V8H6v10Z"></path><path d="M3.5 8A1.5 1.5 0 0 0 2 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 3.5 8Z"></path><path d="M20.5 8A1.5 1.5 0 0 0 19 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 20.5 8Z"></path><path d="M15.53 2.16l1.3-1.3a.5.5 0 0 0-.7-.7l-1.44 1.44a5.9 5.9 0 0 0-5.38 0L7.87.16a.5.5 0 1 0-.7.7l1.3 1.3A6 6 0 0 0 6 7h12a6 6 0 0 0-2.47-4.84ZM9.5 5A.5.5 0 1 1 10 4.5.5.5 0 0 1 9.5 5Zm5 0a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5Z"></path></svg>
+                Android
+              </button>
+              <button class="filter-tab" data-filter="kotlin">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16L12 12l8 8H4z"></path></svg>
+                Kotlin
+              </button>
+              <button class="filter-tab" data-filter="utilities">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                Utilities
+              </button>
+              <button class="filter-tab" data-filter="other">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                Other
+              </button>
+            </div>
+
+            <div class="projects-grid">
+              <div class="card project-card theme-teal featured reveal" data-category="android kotlin">
+                <div class="project-top">
+                  <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 10 6 14 13 17 8 21 20Z"></path></svg></div>
+                  <span class="status-pill">In Progress</span>
+                </div>
+                <div>
+                  <h3>Snowboard</h3>
+                  <p class="project-lang">Android &middot; Kotlin</p>
+                </div>
+                <p class="project-desc">An Android app for snowboarding &amp; skiing: video lessons, weather and resort news, slope maps, gear guides, and the history of the sport.</p>
+                <div class="project-bottom">
+                  <div class="tech-badges">
+                    <span class="tech-badge kotlin">K</span>
+                    <span class="tech-badge android"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18c0 .55.45 1 1 1h1v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19h1c.55 0 1-.45 1-1V8H6v10Z"></path><path d="M3.5 8A1.5 1.5 0 0 0 2 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 3.5 8Z"></path><path d="M20.5 8A1.5 1.5 0 0 0 19 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 20.5 8Z"></path></svg></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card project-card theme-purple reveal" data-category="android kotlin">
+                <div class="project-top">
+                  <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="10" rx="5"></rect><line x1="7" y1="11" x2="7" y2="15"></line><line x1="5" y1="13" x2="9" y2="13"></line><circle cx="15" cy="11.5" r="1"></circle><circle cx="18" cy="13.5" r="1"></circle></svg></div>
+                  <span class="project-dates">Sep 2022 &ndash; May 2023</span>
+                </div>
+                <div>
+                  <h3>Valorant Program</h3>
+                  <p class="project-lang">Android &middot; Kotlin</p>
+                </div>
+                <p class="project-desc">An Android app with in-depth info on Valorant &mdash; agents, maps and weapons, including original video clips &mdash; plus a built-in trivia quiz: 3 categories of 5 questions each, with a pass at 3 correct answers.</p>
+                <div class="project-bottom">
+                  <div class="tech-badges">
+                    <span class="tech-badge kotlin">K</span>
+                    <span class="tech-badge android"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18c0 .55.45 1 1 1h1v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19h1c.55 0 1-.45 1-1V8H6v10Z"></path><path d="M3.5 8A1.5 1.5 0 0 0 2 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 3.5 8Z"></path><path d="M20.5 8A1.5 1.5 0 0 0 19 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 20.5 8Z"></path></svg></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card project-card theme-pink reveal" data-category="kotlin">
+                <div class="project-top">
+                  <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                </div>
+                <div>
+                  <h3>Hot or Not</h3>
+                  <p class="project-lang">Kotlin</p>
+                </div>
+                <p class="project-desc">A social app for rating friends.</p>
+                <div class="project-bottom">
+                  <div class="tech-badges">
+                    <span class="tech-badge kotlin">K</span>
+                  </div>
+                  <a class="project-link" href="https://github.com/damian568/Hot-or-Not" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card project-card theme-purple reveal" data-category="other">
+                <div class="project-top">
+                  <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+                </div>
+                <div>
+                  <h3>Bar Me</h3>
+                  <p class="project-lang">Java</p>
+                </div>
+                <p class="project-desc">Lists restaurants, shows which ones are currently open, and displays them on a map.</p>
+                <div class="project-bottom">
+                  <a class="project-link" href="https://github.com/damian568/Restaurant" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card project-card theme-teal reveal" data-category="utilities">
+                <div class="project-top">
+                  <div class="project-icon fx">f(x)</div>
+                </div>
+                <div>
+                  <h3>Math</h3>
+                  <p class="project-lang">C++</p>
+                </div>
+                <p class="project-desc">A program that calculates and visualizes various geometric shapes and formulas.</p>
+                <div class="project-bottom">
+                  <a class="project-link" href="https://github.com/damian568/Math" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                <!-- Certificates -->
+        <section id="certificates" class="section">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="eyebrow">06 · Certificates</p>
+              <h2>Courses &amp; certificates</h2>
+            </div>
+
+            <div class="certificates-grid">
+              <div class="card certificate-card reveal">
+                <div class="certificate-icon">📘</div>
+                <div>
+                  <h3>Java Course</h3>
+                  <p class="org">Vratsa Software</p>
+                  <p class="loc">Vratsa, Bulgaria</p>
+                </div>
+              </div>
+              <div class="card certificate-card reveal">
+                <div class="certificate-icon">🎮</div>
+                <div>
+                  <h3>Video Game Development</h3>
+                  <p class="org">Telerik Academy</p>
+                  <p class="loc">Vratsa, Bulgaria</p>
+                </div>
+              </div>
+              <div class="card certificate-card reveal">
+                <div class="certificate-icon">🛠️</div>
+                <div>
+                  <h3>Internship Program</h3>
+                  <p class="org">Technopolis</p>
+                  <p class="loc">Vratsa, Bulgaria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                <!-- Contact -->
+        <section id="contact" class="section">
+          <div class="container">
+            <div class="reveal">
+              <p class="eyebrow">Let's Connect</p>
+              <h2 class="contact-heading">Get in <span class="gradient-text">touch</span>.</h2>
+              <p class="contact-subtitle">Have a project in mind or want to work together? I'd love to hear from you!</p>
+
+              <div class="trust-badges">
+                <span class="trust-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 11 15 16 9"></polyline></svg>
+                  Fast response
+                </span>
+                <span class="trust-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 11 15 16 9"></polyline></svg>
+                  Professional
+                </span>
+                <span class="trust-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 11 15 16 9"></polyline></svg>
+                  Open to opportunities
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-cards reveal">
+                <a class="card contact-card theme-purple" href="mailto:didi.milenov@gmail.com">
+                  <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+                  <span>
+                    <span class="label">Email</span>
+                    <span class="value">didi.milenov@gmail.com</span>
+                  </span>
+                  <span class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                </a>
+                <a class="card contact-card theme-blue" href="tel:+359877797290">
+                  <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+                  <span>
+                    <span class="label">Phone</span>
+                    <span class="value">+359 877 797 290</span>
+                  </span>
+                  <span class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                </a>
+                <a class="card contact-card theme-teal" href="https://github.com/damian568" target="_blank" rel="noopener noreferrer">
+                  <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z" fill="currentColor"/></svg></span>
+                  <span>
+                    <span class="label">GitHub</span>
+                    <span class="value">github.com/damian568</span>
+                  </span>
+                  <span class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                </a>
+                <div class="card contact-card theme-orange">
+                  <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                  <span>
+                    <span class="label">Location</span>
+                    <span class="value">Vratsa, Bulgaria</span>
+                    <span class="value">Sofia, Student City</span>
+                  </span>
+                  <span class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                </div>
+              </div>
+
+              <form id="contact-form-el" class="card contact-form reveal">
+                <div class="contact-form-head">
+                  <h3>Send me a message</h3>
+                  <span class="contact-form-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="cf-name">Your Name</label>
+                    <input type="text" id="cf-name" name="name" placeholder="Your Name" required maxlength="120" />
+                    <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                  <div class="form-group">
+                    <label for="cf-email">Your Email</label>
+                    <input type="email" id="cf-email" name="email" placeholder="Your Email" required maxlength="180" />
+                    <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cf-subject">Subject</label>
+                  <input type="text" id="cf-subject" name="subject" placeholder="Subject" maxlength="150" />
+                  <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13 21l-9-9V3h9l7.59 7.59a2 2 0 0 1 0 2.82Z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                </div>
+                <div class="form-group">
+                  <label for="cf-message">Your Message</label>
+                  <textarea id="cf-message" name="message" rows="5" placeholder="Your Message" required maxlength="5000"></textarea>
+                  <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+                </div>
+                <div class="form-footer">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  </button>
+                  <span class="reply-note"><span class="pip"></span>Usually replies within 24h</span>
+                  <p id="form-status" class="form-status"></p>
+                </div>
+              </form>
+            </div>
+
+            <div class="contact-cta reveal">
+              <div class="contact-cta-text">
+                <h3>Let's build something amazing together</h3>
+                <span class="signature">Damyan</span>
+              </div>
+              <div class="contact-cta-socials">
+                <a href="https://github.com/damian568" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://www.instagram.com/damiantsvetkov/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="5"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"></circle></svg>
+                </a>
+                <a href="mailto:didi.milenov@gmail.com" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+        <div id="btn-back-top">
+      <button class="button" onclick="scrollToTop()">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+          </path>
+        </svg>
+      </button>
+    </div>
+        <footer id="footer">
+      <div class="container footer-inner">
+        <p class="footer-copyright">&copy; <span id="year"></span> Damyan Tsvetkov. All rights reserved.</p>
+        <p class="footer-crafted">
+          Crafted with passion
+          <svg viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><path d="M12 21s-7.2-4.5-9.6-9A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 21.6 12c-2.4 4.5-9.6 9-9.6 9z"></path></svg>
+        </p>
+      </div>
+    </footer>
+
+    <script src="JS/loading.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/btn-back-top.js"></script>
+    <script src="JS/reveal.js"></script>
+    <script src="JS/contact.js"></script>
+    <script src="JS/projects-filter.js"></script>
+  </body>
+</html>
