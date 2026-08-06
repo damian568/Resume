@@ -1,5 +1,8 @@
-# Local mail credentials — never commit real SMTP secrets
+# Local mail credentials — never commit real SMTP secrets (legacy, InfinityFree only)
 PHP/mail-config.php
+
+# Node dependencies for the Vercel serverless function
+node_modules
 
 # OS/editor junk
 .DS_Store
