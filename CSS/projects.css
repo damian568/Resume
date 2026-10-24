@@ -194,6 +194,30 @@
   color: #0b0e17;
 }
 
+.tech-badge.angular {
+  background: linear-gradient(135deg, #dd0031, #c3002f);
+}
+
+.tech-badge.ts {
+  background: #3178c6;
+  font-size: 11px;
+}
+
+.tech-badge.js {
+  background: #f7df1e;
+  color: #0b0e17;
+  font-size: 11px;
+}
+
+.tech-badge.node {
+  background: #5fa04e;
+}
+
+.tech-badge.postgres {
+  background: #336791;
+  font-size: 10px;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
